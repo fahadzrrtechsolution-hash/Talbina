@@ -721,12 +721,18 @@ footer {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding-top: 150px;
+        padding-top: 100px;
+        min-height: auto;
     }
     
     .hero-content {
-        padding-right: 0;
-        margin-bottom: 3rem;
+        padding: 2rem 5% 0;
+        margin-bottom: 2rem;
+        background: transparent;
+    }
+
+    .badge {
+        align-self: center;
     }
     
     .hero-content .description {
@@ -734,6 +740,48 @@ footer {
     }
     
     .nutrition-badges {
+        justify-content: center;
+    }
+
+    .hero-image {
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: 50vh;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    .curved-bg {
+        width: 150%;
+        height: 80%;
+        top: 20%;
+        right: -25%;
+        border-radius: 50% 50% 0 0;
+    }
+
+    .hero-image-wrapper {
+        transform: translateX(0);
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    /* Product Section Mobile */
+    .product-container {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .product-details {
+        text-align: center;
+    }
+    
+    .product-features li {
+        justify-content: center;
+    }
+
+    .action-buttons {
         justify-content: center;
     }
     
