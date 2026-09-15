@@ -78,4 +78,46 @@ document.addEventListener('DOMContentLoaded', () => {
             el.style.transition = 'transform 0.5s ease';
         });
     });
+    // --- Language Switcher Logic ---
+    const langToggleBtn = document.getElementById('langToggle');
+    const htmlElement = document.documentElement;
+    
+    // Check local storage for saved language, default to 'en'
+    let currentLang = localStorage.getItem('talbina_lang') || 'en';
+    
+    // Function to apply language
+    const applyLanguage = (lang) => {
+        if (!translations[lang]) return;
+        
+        // Update document dir for RTL
+        if (lang === 'ur') {
+            htmlElement.setAttribute('dir', 'rtl');
+            htmlElement.setAttribute('lang', 'ur');
+            langToggleBtn.textContent = 'English';
+        } else {
+            htmlElement.removeAttribute('dir');
+            htmlElement.setAttribute('lang', 'en');
+            langToggleBtn.textContent = 'اردو';
+        }
+        
+        // Update all elements with data-i18n
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                el.innerHTML = translations[lang][key];
+            }
+        });
+    };
+    
+    // Initial apply
+    applyLanguage(currentLang);
+    
+    // Toggle button click event
+    if (langToggleBtn) {
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'ur' : 'en';
+            localStorage.setItem('talbina_lang', currentLang);
+            applyLanguage(currentLang);
+        });
+    }
 });

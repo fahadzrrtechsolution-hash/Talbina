@@ -7,6 +7,7 @@
     <meta name="description" content="Talbina is a healthy, pure, and natural Sunnah food made with barley, seeds, dry fruits, and nuts. No preservatives, no chemicals.">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,15 +15,16 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">
+            <a href="#" class="logo" data-i18n="brandName">
                 <i class="fa-solid fa-leaf"></i> Nurture Foods
             </a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#product">Product</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact" class="btn-primary">Order Now</a></li>
+                <li><a href="#home" data-i18n="navHome">Home</a></li>
+                <li><a href="#benefits" data-i18n="navBenefits">Benefits</a></li>
+                <li><a href="#product" data-i18n="navProduct">Product</a></li>
+                <li><a href="#about" data-i18n="navAbout">About</a></li>
+                <li><a href="#contact" class="btn-primary" data-i18n="navOrder">Order Now</a></li>
+                <li><button id="langToggle" class="lang-toggle">اردو</button></li>
             </ul>
             <div class="hamburger">
                 <i class="fa-solid fa-bars"></i>
@@ -33,22 +35,22 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <span class="badge">A Sunnah Food</span>
-            <h1>TALBINA</h1>
-            <p class="tagline">Healthy | Pure | Natural</p>
-            <p class="description">
+            <span class="badge" data-i18n="heroBadge">A Sunnah Food</span>
+            <h1 data-i18n="heroTitle">TALBINA</h1>
+            <p class="tagline" data-i18n="heroTagline">Healthy | Pure | Natural</p>
+            <p class="description" data-i18n="heroDesc">
                 A balanced herbal supplement for the whole family. Made with dry fruits, nuts, barley, and seeds. Zero preservatives, no chemicals, no artificial colors or flavors.
             </p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn-primary btn-large">Get Yours Today <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contact" class="btn-primary btn-large" data-i18n="heroBtn">Get Yours Today <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             
             <div class="nutrition-badges">
-                <span class="n-badge omega">Omega-3 Fatty Acids</span>
-                <span class="n-badge magnesium">Magnesium</span>
-                <span class="n-badge vitamins">Vitamins</span>
-                <span class="n-badge calcium">Calcium</span>
-                <span class="n-badge iron">Iron</span>
+                <span class="n-badge omega" data-i18n="omega3">Omega-3 Fatty Acids</span>
+                <span class="n-badge magnesium" data-i18n="magnesium">Magnesium</span>
+                <span class="n-badge vitamins" data-i18n="vitamins">Vitamins</span>
+                <span class="n-badge calcium" data-i18n="calcium">Calcium</span>
+                <span class="n-badge iron" data-i18n="iron">Iron</span>
             </div>
         </div>
         <div class="hero-image">
@@ -60,22 +62,22 @@
                 <div class="floating-card card-1">
                     <i class="fa-solid fa-wheat-awn"></i>
                     <div>
-                        <h4>Barley</h4>
-                        <p>High Fiber</p>
+                        <h4 data-i18n="cardBarley">Barley</h4>
+                        <p data-i18n="cardBarleyDesc">High Fiber</p>
                     </div>
                 </div>
                 <div class="floating-card card-2">
                     <i class="fa-solid fa-seedling"></i>
                     <div>
-                        <h4>Dry Fruits</h4>
-                        <p>Omega-3</p>
+                        <h4 data-i18n="cardDryFruits">Dry Fruits</h4>
+                        <p data-i18n="cardDryFruitsDesc">Omega-3</p>
                     </div>
                 </div>
                 <div class="floating-card card-3">
                     <i class="fa-solid fa-bolt"></i>
                     <div>
-                        <h4>Energy</h4>
-                        <p>All Day Long</p>
+                        <h4 data-i18n="cardEnergy">Energy</h4>
+                        <p data-i18n="cardEnergyDesc">All Day Long</p>
                     </div>
                 </div>
             </div>
@@ -86,29 +88,29 @@
     <section id="benefits" class="benefits">
         <div class="container">
             <div class="section-header">
-                <h2>Why Choose Talbina?</h2>
-                <p>Nourish your body with natural goodness</p>
+                <h2 data-i18n="benefitTitle">Why Choose Talbina?</h2>
+                <p data-i18n="benefitSubtitle">Nourish your body with natural goodness</p>
             </div>
             <div class="benefits-grid">
                 <div class="benefit-card fade-up">
                     <div class="icon-wrapper"><i class="fa-solid fa-wheat-awn"></i></div>
-                    <h3>Premium Barley</h3>
-                    <p>Rich in dietary fiber, aiding in digestion and providing sustained energy throughout the day.</p>
+                    <h3 data-i18n="b1Title">Premium Barley</h3>
+                    <p data-i18n="b1Desc">Rich in dietary fiber, aiding in digestion and providing sustained energy throughout the day.</p>
                 </div>
                 <div class="benefit-card fade-up" style="animation-delay: 0.1s;">
                     <div class="icon-wrapper"><i class="fa-solid fa-seedling"></i></div>
-                    <h3>Nuts & Seeds</h3>
-                    <p>Packed with essential fatty acids, protein, and antioxidants for optimal health.</p>
+                    <h3 data-i18n="b2Title">Nuts & Seeds</h3>
+                    <p data-i18n="b2Desc">Packed with essential fatty acids, protein, and antioxidants for optimal health.</p>
                 </div>
                 <div class="benefit-card fade-up" style="animation-delay: 0.2s;">
                     <div class="icon-wrapper"><i class="fa-solid fa-heart-pulse"></i></div>
-                    <h3>Whole Family</h3>
-                    <p>A perfectly balanced supplement suitable for all ages, promoting holistic well-being.</p>
+                    <h3 data-i18n="b3Title">Whole Family</h3>
+                    <p data-i18n="b3Desc">A perfectly balanced supplement suitable for all ages, promoting holistic well-being.</p>
                 </div>
                 <div class="benefit-card fade-up" style="animation-delay: 0.3s;">
                     <div class="icon-wrapper"><i class="fa-solid fa-ban"></i></div>
-                    <h3>100% Pure</h3>
-                    <p>Absolutely no preservatives, artificial colors, flavors, or chemicals used in our product.</p>
+                    <h3 data-i18n="b4Title">100% Pure</h3>
+                    <p data-i18n="b4Desc">Absolutely no preservatives, artificial colors, flavors, or chemicals used in our product.</p>
                 </div>
             </div>
         </div>
@@ -122,20 +124,20 @@
                     <img src="images/talbina.jpg" alt="Talbina Product Bag">
                 </div>
                 <div class="product-details fade-left">
-                    <span class="badge">100% Pure & Natural</span>
-                    <h3>Talbina Natural Barley Porridge</h3>
-                    <p>Experience the wholesome goodness of Sunnah food. Our carefully crafted Talbina powder comes with premium dates, nuts, and seeds.</p>
+                    <span class="badge" data-i18n="prodBadge">100% Pure & Natural</span>
+                    <h3 data-i18n="prodTitle">Talbina Natural Barley Porridge</h3>
+                    <p data-i18n="prodDesc">Experience the wholesome goodness of Sunnah food. Our carefully crafted Talbina powder comes with premium dates, nuts, and seeds.</p>
                     
-                    <div class="price">Rs. 1,000 <span style="font-size: 1rem; color: var(--text-muted); font-weight: normal;">/ 250g Pack</span></div>
+                    <div class="price" data-i18n="prodPrice">Rs. 1,000 <span style="font-size: 1rem; color: var(--text-muted); font-weight: normal;">/ 250g Pack</span></div>
                     
                     <ul class="product-features">
-                        <li><i class="fa-solid fa-check"></i> High in Fiber & Gluten-Free</li>
-                        <li><i class="fa-solid fa-check"></i> Zero Preservatives</li>
-                        <li><i class="fa-solid fa-check"></i> Perfect for digestion & energy</li>
+                        <li data-i18n="prodFeat1"><i class="fa-solid fa-check"></i> High in Fiber & Gluten-Free</li>
+                        <li data-i18n="prodFeat2"><i class="fa-solid fa-check"></i> Zero Preservatives</li>
+                        <li data-i18n="prodFeat3"><i class="fa-solid fa-check"></i> Perfect for digestion & energy</li>
                     </ul>
                     
                     <div class="action-buttons">
-                        <a href="#contact" class="btn-primary">Buy Now <i class="fa-solid fa-cart-shopping" style="margin-left: 8px;"></i></a>
+                        <a href="#contact" class="btn-primary" data-i18n="prodBtn">Buy Now <i class="fa-solid fa-cart-shopping" style="margin-left: 8px;"></i></a>
                     </div>
                 </div>
             </div>
@@ -150,8 +152,8 @@
                      <div class="card-mockup">
                         <div class="card-header">
                             <i class="fa-solid fa-user-doctor"></i>
-                            <h3>Hakeem Anjum Aslam</h3>
-                            <span>Hajama Therapist</span>
+                            <h3 data-i18n="aboutHeading">Hakeem Anjum Aslam</h3>
+                            <span data-i18n="aboutSub">Hajama Therapist</span>
                         </div>
                         <div class="card-body">
                             <p><strong>R.N. (QH47907-A)</strong></p>
@@ -161,13 +163,13 @@
                      </div>
                 </div>
                 <div class="about-text fade-left">
-                    <h2>Expert Care & Natural Healing</h2>
-                    <p>Crafted under the expert guidance of <strong>Hakeem Anjum Aslam</strong>, a certified Hajama Therapist and specialist in holistic well-being.</p>
-                    <p>Our formulation is strictly based on traditional Sunnah practices combined with modern hygiene standards to bring you the purest form of Talbina available.</p>
+                    <h2 data-i18n="aboutTitle">Expert Care & Natural Healing</h2>
+                    <p data-i18n="aboutDesc1">Crafted under the expert guidance of <strong>Hakeem Anjum Aslam</strong>, a certified Hajama Therapist and specialist in holistic well-being.</p>
+                    <p data-i18n="aboutDesc2">Our formulation is strictly based on traditional Sunnah practices combined with modern hygiene standards to bring you the purest form of Talbina available.</p>
                     <ul class="feature-list">
-                        <li><i class="fa-solid fa-check-circle"></i> Certified Practitioner</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Authentic Recipe</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Premium Quality Ingredients</li>
+                        <li data-i18n="aboutFeat1"><i class="fa-solid fa-check-circle"></i> Certified Practitioner</li>
+                        <li data-i18n="aboutFeat2"><i class="fa-solid fa-check-circle"></i> Authentic Recipe</li>
+                        <li data-i18n="aboutFeat3"><i class="fa-solid fa-check-circle"></i> Premium Quality Ingredients</li>
                     </ul>
                 </div>
             </div>
@@ -178,30 +180,30 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-card fade-up">
-                <h2>Place Your Order</h2>
-                <p>Contact us directly to order your pack of healthy, natural Talbina.</p>
+                <h2 data-i18n="contactTitle">Place Your Order</h2>
+                <p data-i18n="contactSubtitle">Contact us directly to order your pack of healthy, natural Talbina.</p>
                 
                 <div class="contact-info-grid">
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
-                        <h4>Call or WhatsApp</h4>
+                        <h4 data-i18n="contactCall">Call or WhatsApp</h4>
                         <a href="tel:03054348832">0305-4348832</a>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-                        <h4>Email Us</h4>
+                        <h4 data-i18n="contactEmail">Email Us</h4>
                         <a href="mailto:Anjum397@gmail.com">Anjum397@gmail.com</a>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-                        <h4>Visit Our Clinic</h4>
-                        <p>Railway Bazaar Khudian Khas, Kasur</p>
+                        <h4 data-i18n="contactVisit">Visit Our Clinic</h4>
+                        <p data-i18n="contactAddr">Railway Bazaar Khudian Khas, Kasur</p>
                     </div>
                 </div>
                 
                 <div class="cta-banner">
-                    <h3>Ready to embrace a healthier lifestyle?</h3>
-                    <a href="https://wa.me/923054348832" target="_blank" class="btn-primary btn-large whatsapp-btn">
+                    <h3 data-i18n="ctaTitle">Ready to embrace a healthier lifestyle?</h3>
+                    <a href="https://wa.me/923054348832" target="_blank" class="btn-primary btn-large whatsapp-btn" data-i18n="ctaBtn">
                         <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                     </a>
                 </div>
@@ -212,11 +214,12 @@
     <!-- Footer -->
     <footer>
         <div class="footer-bottom">
-            <p>&copy; 2026 Nurture Foods - Talbina. All Rights Reserved.</p>
-            <p>Formulated by Hakeem Anjum Aslam</p>
+            <p data-i18n="footerText1">&copy; 2026 Nurture Foods - Talbina. All Rights Reserved.</p>
+            <p data-i18n="footerText2">Formulated by Hakeem Anjum Aslam</p>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

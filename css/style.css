@@ -825,3 +825,89 @@ footer {
         padding: 2rem 1.5rem;
     }
 }
+
+/* Language Toggle Button */
+.lang-toggle {
+    background: var(--primary-light);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+}
+
+.lang-toggle:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* RTL Styles for Urdu */
+html[dir="rtl"] {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-size: 105%;
+    line-height: 1.8;
+}
+
+html[dir="rtl"] h1, 
+html[dir="rtl"] h2, 
+html[dir="rtl"] h3, 
+html[dir="rtl"] h4,
+html[dir="rtl"] .logo,
+html[dir="rtl"] .nav-links a,
+html[dir="rtl"] .btn-primary, 
+html[dir="rtl"] .lang-toggle,
+html[dir="rtl"] .badge {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-weight: 700;
+}
+
+/* Adjust margins/paddings for RTL if necessary */
+html[dir="rtl"] .action-buttons i {
+    margin-right: 8px !important;
+    margin-left: 0 !important;
+}
+
+html[dir="rtl"] .product-features i,
+html[dir="rtl"] .feature-list i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* RTL Fixes for Hero Section */
+html[dir="rtl"] .hero-content {
+    padding: 120px 10% 60px 5%;
+}
+
+html[dir="rtl"] .hero-image {
+    right: auto;
+    left: 0;
+    justify-content: flex-start;
+}
+
+html[dir="rtl"] .curved-bg {
+    right: auto;
+    left: -20%;
+}
+
+html[dir="rtl"] .hero-image-wrapper {
+    transform: translateX(15%);
+}
+
+html[dir="rtl"] .card-1 {
+    left: auto;
+    right: 20%;
+}
+
+html[dir="rtl"] .card-2 {
+    left: auto;
+    right: -15%;
+}
+
+html[dir="rtl"] .card-3 {
+    right: auto;
+    left: 15%;
+}
